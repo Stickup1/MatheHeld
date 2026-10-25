@@ -140,3 +140,9 @@ npm run build
 ```
 
 Die erste Zahlenmission enthält fünf geprüfte Beispielaufgaben. Weitere Missionen werden lokal aus thematischen Rechenvorlagen mit passenden Zahlenwerten erzeugt. Fortschritt lässt sich als JSON sichern und importieren; Aufgaben können als JSON oder über den Browserdruck als PDF mit optionalem Lösungsblatt exportiert werden.
+
+## Auf GitHub Pages veröffentlichen
+
+Ein GitHub-Actions-Workflow baut die App bei jedem Push auf `main` und veröffentlicht sie unter [https://stickup1.github.io/MatheHeld/](https://stickup1.github.io/MatheHeld/). Dafür einmal im Repository **Settings → Pages → Build and deployment → Source → GitHub Actions** auswählen. Danach genügt ein Push auf `main`; den Status und die URL zeigt der Workflow **Deploy to GitHub Pages** unter **Actions** an.
+
+Die Lernstände bleiben auch auf GitHub Pages lokal im Browser des jeweiligen Geräts. Sie werden nicht zwischen Besuchern oder Geräten synchronisiert. Die lokale Entwicklung verwendet weiterhin den Basis-Pfad `/`.

@@ -1,0 +1,49 @@
+:root {
+  font-family: 'DM Sans', 'Avenir Next', sans-serif;
+  color: #19372f;
+  background: #f3f5ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --ink: #19372f;
+  --forest: #17483a;
+  --forest-deep: #12372e;
+  --muted: #718078;
+  --paper: #f3f5ef;
+  --surface: #fffefa;
+  --line: #e2e8df;
+  --orange: #f17450;
+  --yellow: #f5cf60;
+  --blue: #9bc8d4;
+  --green: #a8c998;
+  --shadow: 0 14px 35px rgba(25, 55, 47, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(25, 55, 47, 0.07) 0.65px, transparent 0.65px);
+  background-size: 18px 18px;
+}
+
+button, input, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid #dc8a39;
+  outline-offset: 3px;
+}
+
+#root { min-height: 100vh; }
+
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: 'Space Grotesk', 'Avenir Next', sans-serif; color: var(--ink); }
+button:disabled { cursor: not-allowed; opacity: 0.52; }
+
+::selection { color: var(--ink); background: #f5cf60; }
